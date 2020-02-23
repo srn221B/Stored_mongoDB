@@ -7,14 +7,16 @@ Store timestamp and tweet contents in a collection called sample on a DB called 
 works on python3.
 
 ## Usage
-* Enter api key
-`consumer_key = ''
-consumer_secret = ''
-access_token_key = ''
-access_token_secret = ''`
+* run MongoDB  
 
-* run on python
-python3 twitter-streaming.py
+* export api key  
+`export twitter_consumer_key=""`  
+`export twitter_consumer_secret=""`  
+`export twitter_access_token_key=""`  
+`export twitter_access_token_secret=""`  
+
+* run on python  
+python3 twitter-streaming.py  
 
 ## Author
 shimoyama
