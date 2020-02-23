@@ -3,12 +3,15 @@ import json
 import pymongo
 import requests_oauthlib
 import tqdm
+import os
 
 # API key
-consumer_key = ''
-consumer_secret = ''
-access_token_key = ''
-access_token_secret = ''
+consumer_key = os.environ['twitter_consumer_key']
+consumer_secret = os.environ['twitter_consumer_secret']
+access_token_key = os.environ['twitter_access_token_key']
+access_token_secret = os.environ['twitter_access_token_secret']
+print("consumer_key",consumer_key,"consumer_secret",consumer_secret)
+print("access_token_key",access_token_key,"access_token_secret",access_token_secret)
 
 # Twitter Streaming API
 twitter = requests_oauthlib.OAuth1Session(
